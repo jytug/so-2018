@@ -11,3 +11,7 @@ int set_bit(uint64_t *x, unsigned char bit) {
     x[which] |= shift;
     return 0;
 }
+
+int compare(uint64_t *x, uint64_t *y) {
+    return memcmp(x, y, 32) == 0;
+}
